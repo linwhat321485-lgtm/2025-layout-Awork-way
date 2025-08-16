@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>預約紀錄</title>
+  </head>
+  <body>
+    <%- include('./layout/header-login'); -%>
+     <!-- <header class="bg-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
+            <a class="navbar-brand order-1" href="./index.html">
+              <img src="../assets/images/logo.svg" alt="logo">
+            </a>
+            <div class="order-3 order-md-2">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav r">
+                  <li class="nav-item">
+                    <a class="nav-link px-4" aria-current="page" href="#">服務方案</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4" href="#">關於職旅</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4" href="#">聯絡我們</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex align-items-center order-2 order-md-3" >
+              <img src="../assets/images/avatar.png" alt="logo" class="me-2 rounded-circle border" style="max-height: 44px; width: auto;">
+              <p class="mb-0">Mokumaru</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+     </header> -->
+     <main class="py-9 py-md-12">
+       <%- include('./layout/nav-member'); -%>
+       <div class="container">
+         <div class="row ">
+          <div class="col-10 mx-auto">
+            <div class="bg-white rounded cus-shadow p-6 p-md-9">
+              <h1>預約紀錄</h1>
+              <section>
+                <div class="row">
+                  <div class="col-md-4 d-none d-md-grid">
+                    <div class="card">
+                      <div class="card-body text-center ">
+                        <h2 class="card-title text-primary">3</h2>
+                        <p>已完成諮詢</p>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <h2 class="card-title text-primary">2025/10/10</h2>
+                        <p>即將到來</p>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-md-4 d-none d-md-grid">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <h2 class="card-title text-primary">3/6</h2>
+                        <p>使用方案進度</p>
+                      </div>
+                   </div>
+                  </div>
+                  
+                </div>
+              </section>
+              <section>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <button type="button" class="btn btn-light" active >全部預約</button>
+                    <button type="button" class="btn btn-light">已完成</button>
+                    <button type="button" class="btn btn-light">已取消</button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-light d-flex">
+                      <span class="d-none d-md-inline">排序</span>
+                      <span class="material-symbols-outlined ms-md-1">filter_list</span>
+                    </button>
+
+                  </div>
+                  
+                </div>
+                <h3 class="d-md-none">預約紀錄一覽</h3>
+                <!-- 不會RWD -->
+                <table class="table table-striped">
+                  <thead class="">
+                    <tr>
+                      <th scope="col">諮詢方案</th>
+                      <th scope="col">預約日期</th>
+                      <th scope="col">諮詢時長</th>
+                      <th scope="col">諮詢方式</th>
+                      <th scope="col">上課狀態</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    <tr>
+                      <th scope="row">職涯定位-職涯探索包 | 6/6堂</th>
+                      <td>2025/11/11</td>
+                      <td>60分鐘</td>
+                      <td><span class="badge bg-white text-secondary">視訊</span></td>
+                      <td>等待上課</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">職涯定位-職涯探索包 | 5/6堂</th>
+                      <td>2025/10/10</td>
+                      <td>60分鐘</td>
+                      <td><span class="badge bg-white text-secondary">視訊</span></td>
+                      <td>等待上課</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">職涯定位-職涯探索包 | 4/6堂</th>
+                      <td>2025/09/09</td>
+                      <td>60分鐘</td>
+                      <td><span class="badge bg-white text-secondary">視訊</span></td>
+                      <td>已完成</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">職涯定位-職涯探索包 | 3/6堂</th>
+                      <td>2025/08/08</td>
+                      <td>60分鐘</td>
+                      <td><span class="badge bg-white text-secondary">面對面</span></td>
+                      <td>已完成</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">職涯定位-職涯探索包 | 2/6堂</th>
+                      <td>2025/07/07</td>
+                      <td>60分鐘</td>
+                      <td><span class="badge bg-white text-secondary">面對面</span></td>
+                      <td>已完成</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">職涯定位-職涯探索包 | 1/6堂</th>
+                      <td>2025/06/06</td>
+                      <td>60分鐘</td>
+                      <td><span class="badge bg-white text-secondary">面對面</span></td>
+                      <td>已完成</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </section>
+            </div>
+          </div>
+         </div>
+
+       </div>
+
+     </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

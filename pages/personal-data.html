@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人資料</title>
+  </head>
+  <body>
+    <%- include('./layout/header-login'); -%>
+     <main class="py-9 py-md-12">
+       <%- include('./layout/nav-member'); -%>
+       <div class="container">
+         <div class="row ">
+           <div class="col-md-10 mx-auto">
+            <div class="bg-white rounded cus-shadow p-6 p-md-9">
+              <div class="row mb-12 mb-md-9">
+                <div class="col-md-3">
+                  <h1 class="h5">個人資料</h1>
+                </div>
+                <div class="col-md-9">
+                  <div class="d-flex d-flex align-items-end mb-4 mb-md-6">
+                    <div class="me-3">
+                      <img class="rounded-circle border" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true" alt="個人大頭貼">
+                    </div>
+                    <div>
+                      <button type="button" class="btn btn-outline-dark rounded-3 d-flex align-items-center">
+                        <span class="material-icons-outlined me-md-1">file_upload</span>
+                        更新頭貼
+                      </button>
+                    </div>
+                  </div>
+                  <form class=" " action="">
+                    <div class="form-floating mb-4 mb-md-6">
+                      <input type="text" class="form-control" id="username" value="Mokumaru" placeholder="your name">
+                      <label for="username" class="form-label ">姓名</label>
+                    </div>
+                    <div class="mb-4 mb-md-6">
+                      <p>性別</p>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">女性</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">男性</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">不願透露</label>
+                      </div>
+                    </div>
+                    <div class="form-floating mb-4 mb-md-6">
+                      <input type="date" class="form-control" id="birthday" value="Mokumaru">
+                      <label for="birthday" class="form-label ">生日</label>
+                    </div>
+                    <div class="mb-4 mb-md-6">
+                      <p>密碼</p>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-light d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        修改密碼
+                        <span class="material-icons-outlined ms-1">chevron_right</span>
+                      </button>
+  
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">更新密碼</h1>
+                              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <FORM>
+                                <div class="form-floating">
+                                  <input type="password" class="form-control" id="newPassword" placeholder="Password">
+                                  <label for="newPassword">新密碼</label>
+                                </div>  
+                                <div class="form-floating">
+                                  <input type="password" class="form-control" id="checkPassword" placeholder="Password">
+                                  <label for="checkPassword">再次密碼</label>
+                                </div>
+                              </FORM>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary d-flex" data-bs-dismiss="modal">
+                                更新密碼
+                                <span class="material-icons-outlined ms-1">chevron_right</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-floating mb-4 mb-md-6">
+                      <input type="email" class="form-control" id="email" value="mokumaru@mail.com">
+                      <label for="email" class="form-label ">信箱</label>
+                      <p class="text-muted">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
+                    </div>
+                    <div class="form-floating mb-4 mb-md-6">
+                      <input type="tel" class="form-control" id="tel" value="09-1234-5678">
+                      <label for="tel" class="form-label ">聯絡電話</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="adress" value="高雄市三民區九如一路 87 號">
+                      <label for="adress" class="form-label ">通訊地址</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="d-grid gap-4 d-md-flex flex-row-reverse justify-content-md-center">
+                  <button type="button" class="btn btn-dark d-flex align-items-center justify-content-center">儲存更新<span class="material-icons-outlined ms-md-1">chevron_right</span></button>
+                  <button type="button" class="btn btn-light d-flex align-items-center justify-content-center me-md-6">重新填寫<span class="material-icons-outlined ms-md-1">chevron_right</span></button>
+                </div>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+     </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
