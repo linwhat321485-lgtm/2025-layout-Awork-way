@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人資料</title>
+    <script type="module" crossorigin src="/2025-layout-Awork-way/assets/main-CPAGOnpH.js"></script>
+  </head>
+  <body>
+    <!-- <h1 class="header">header</h1>
+<a href="index.html">index</a>
+<a href="about.html">about</a>
+<a href="contact.html">contact</a> -->
+     <header class="bg-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-md py-3">
+          <div class="container-fluid">
+            <a class="navbar-brand order-1" href="./index.html">
+              <img src="../assets/images/logo.svg" alt="logo">
+            </a>
+            <div class="order-3 order-md-2">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav r">
+                  <li class="nav-item">
+                    <a class="nav-link px-4" aria-current="page" href="#">服務方案</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4" href="#">關於職旅</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4" href="#">聯絡我們</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex align-items-center order-2 order-md-3" >
+              <img src="../assets/images/avatar.png" alt="logo" class="me-2 rounded-circle" style="max-height: 44px; width: auto;">
+              <p class="mb-0">Mokumaru</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+     </header>
+     <main class="">
+       <nav class="container mb-4">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <ul class="nav justify-content-around">
+                <li class="nav-item">
+                  <a class="btn btn-outline-dark rounded-3 " href="#">
+                    <div class="d-flex align-items-center">
+                      <span class="material-icons-outlined">face</span>
+                        個人資料
+                      </div>
+                      </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-outline-dark" href="./appointment-records.html">
+                    <div class="d-flex align-items-center">
+                      <span class="material-icons-outlined">pending_actions</span>
+                      預約紀錄
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-outline-dark" href="./career-plan.html">
+                    <div class="d-flex align-items-center">
+                      <span class="material-icons-outlined">list_alt</span>
+                      職旅計劃
+                    </div>
+                  </a>
+                </li>
+              </ul>      
+            </div>
+          </div>
+       </nav>
+       <div class="container">
+         <div class="bg-white rounded cus-shadow">
+           <div class="container p-4 mb-4s">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h1 class="h5">個人資料</h1>
+                  </div>
+
+                  <div class="col-md-9">
+                    <div class="d-flex d-flex align-items-end mb-4">
+                      <div class="me-3">
+                        <img class="rounded-circle" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true" alt="個人大頭貼">
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-dark rounded-3">
+                          <span class="material-icons-outlined">file_upload</span>
+                          更新頭貼
+                        </button>
+                      </div>
+                    </div>
+                    <form class=" " action="">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="username" value="Mokumaru" placeholder="your name">
+                        <label for="username" class="form-label ">姓名</label>
+                      </div>
+                      <div>
+                        <h2>性別</h2>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">女性</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">男性</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                          <label class="form-check-label" for="inlineRadio3">不願透露</label>
+                        </div>
+                      </div>
+                      <div class="form-floating">
+                        <input type="date" class="form-control" id="birthday" value="Mokumaru">
+                        <label for="birthday" class="form-label ">生日</label>
+                      </div>
+                      <div>
+                        <h2>密碼</h2>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          修改密碼<span class="material-icons-outlined">chevron_right</span>
+                        </button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">更新密碼</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <FORM>
+                                  <div class="form-floating">
+                                    <input type="password" class="form-control" id="newPassword" placeholder="Password">
+                                    <label for="newPassword">新密碼</label>
+                                  </div>  
+                                  <div class="form-floating">
+                                    <input type="password" class="form-control" id="checkPassword" placeholder="Password">
+                                    <label for="checkPassword">再次密碼</label>
+                                  </div>
+                                </FORM>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                  更新密碼
+                                  <span class="material-icons-outlined">chevron_right</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="email" value="mokumaru@mail.com">
+                        <label for="email" class="form-label ">信箱</label>
+                        <p class="text-muted">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</p>
+                      </div>
+                      <div class="form-floating">
+                        <input type="tel" class="form-control" id="tel" value="09-1234-5678">
+                        <label for="tel" class="form-label ">聯絡電話</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="adress" value="高雄市三民區九如一路 87 號">
+                        <label for="adress" class="form-label ">通訊地址</label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+
+           <div class="container p-4 d-grid d-md-flex flex-row-reverse justify-content-center">
+            <button type="button" class="btn btn-dark">儲存更新<span class="material-icons-outlined">chevron_right</span></button>
+            <button type="button" class="btn btn-light">重新填寫<span class="material-icons-outlined">chevron_right</span></button>
+           </div>
+         </div>
+
+       </div>
+
+     </main>
+     <footer>
+      <div class="container">
+        <div class="row">
+          <div class="">
+            <div class="d-md-flex justify-content-between">
+              <div class="d-md-flex">
+                <ul class="nav justify-content-center" >
+                  <li class="nav-item">
+                    <a href="#" class="btn btn-lg link-dark link-underline-opacity-0" style="font-size: 14px;">服務方案</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="btn btn-lg link-dark link-underline-opacity-0" style="font-size: 14px;">關於職旅</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="btn btn-lg link-dark link-underline-opacity-0" style="font-size: 14px;">聯絡我們</a>
+                  </li>
+                </ul>
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a href="#" class="btn btn-lg link-dark link-underline-opacity-0" style="font-size: 14px;">隱私權政策</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="btn btn-lg link-dark link-underline-opacity-0" style="font-size: 14px;">用戶條款</a>
+                  </li>
+        
+                </ul>
+              </div>
+              <p class="text-center text-natural">Copyright © 2025 職旅 workway. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </footer>
+
+
+
+    <!-- <footer class="footer">footer</footer> -->
+
+  </body>
+</html>
