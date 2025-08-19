@@ -1,0 +1,12 @@
+.btn-cus-primary{
+    color: $white;
+    background: $black;
+    & :hover{
+        color: $black;
+        background-color: $secondary;
+    }
+    &:active{
+        color: $black;
+        background-color: $secondary;
+    }
+}

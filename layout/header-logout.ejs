@@ -3,32 +3,157 @@
 <div class="container">
 <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
-    <a class="navbar-brand order-1" href="./index.html">
-        <img src="../assets/images/logo.svg" alt="logo">
-    </a>
-    <div class="order-3 order-md-2">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
-        <ul class="navbar-nav r">
-            <li class="nav-item">
-            <a class="nav-link px-4" aria-current="page" href="#">服務方案</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link px-4" href="#">關於職旅</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link px-4" href="#">聯絡我們</a>
-            </li>
-        </ul>
+        <a class="navbar-brand order-1" href="./index.html">
+            <img src="../assets/images/logo.svg" alt="logo">
+        </a>
+        <div class="order-3 order-md-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link px-4" aria-current="page" href="#">服務方案</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link px-4" href="./member-area.html">關於職旅</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link px-4" href="#">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="d-flex align-items-center order-2 order-md-3" >
-        <img src="../assets/images/avatar.png" alt="logo" class="me-2 rounded-circle border" style="max-height: 44px; width: auto;">
-        <p class="mb-0">Mokumaru</p>
-    </div>
+        <div class="d-flex align-items-center order-2 order-md-3" >
+            <a class="btn btn-white border py-2 px-4 px-md-6" data-bs-toggle="modal" href="#exampleModalToggle" role="button">登入/註冊</a>
+        </div>
     </div>
 </nav>
 </div>
 </header>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down modal-xl">
+    <div class="modal-content">
+        <div class="modal-body p-0">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-xl-7 d-none d-xl-flex">
+                        <img src="../assets/images/login/login.png" alt="" class=" modal-img img-fluid" >
+                    </div>
+                    <div class="col-xl-5 ">
+                        <div class="py-9s px-6 p-md-9">
+                            <div class="d-block position-relative mb-6 mb-md-9">
+                                <h1 class="h1 text-center" id="exampleModalToggleLabel">登入</h1>
+                                <button type="button" class="btn-close position-absolute bottom-100 start-100 translate-middle" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="d-grid gap-4 pb-6 mb-6 border-bottom">
+                                <button type="button" class="btn btn-white border"><img src="../assets/images/costom-icon/icon/google.svg" alt="">Google</button>
+                                <button type="button" class="btn btn-white border"><img src="../assets/images/costom-icon/icon/discord.svg" alt="">Discord</button>
+                            </div>
+                            <form class="mb-9">
+                                <div class="form-floating mb-4">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="account">
+                                    <label for="floatingInput">帳號</label>
+                                </div>
+                                <div class="form-floating mb-4 position-relative">
+                                    
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">密碼 </label>
+                                        <span class="material-icons-outlined position-absolute top-50 end-0 translate-middle">visibility_off</span>
+                                    
+                                    
+                                </div>
+                                <div class="text-end mb-4">
+                                    <a class="text-g-secondary text-decoration-none" style="cursor: pointer;">忘記密碼</a>
+                                </div>
+                                <div class="d-grid gap-4">
+                                    <button type="button" class="btn-cus-fill btn-cus-main border-0 d-flex justify-content-center">
+                                        送出<span class="material-icons-outlined ms-md-1">chevron_right</span>
+                                    </button>
+                                </div>
+                            </form> 
+                            <div class="text-center ">
+                                <span>不是會員？</span>
+                                <a class="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" style="cursor: pointer;">
+                                    快速註冊
+                                </a>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down modal-xl">
+    <div class="modal-content">
+        <div class="modal-body p-0">
+            <div class="container-fluid p-0">
+                <div class="row g-0 flex-row-reverse">
+                    <div class="col-xl-7 d-none d-xl-flex">
+                        <img src="../assets/images/login/register.png" alt="" class=" modal-img img-fluid" >
+                    </div>
+                    <div class="col-xl-5 ">
+                        <div class="py-9s px-6 p-md-9">
+                            <div class="d-block position-relative mb-6 mb-md-9">
+                                <h1 class="h1 text-center" id="exampleModalToggleLabel">註冊</h1>
+                                <button type="button" class="btn-close position-absolute bottom-100 start-100 translate-middle" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="d-grid gap-4 pb-6 mb-6 border-bottom">
+                                <button type="button" class="btn btn-white border"><img src="../assets/images/costom-icon/icon/google.svg" alt="">Google</button>
+                                <button type="button" class="btn btn-white border"><img src="../assets/images/costom-icon/icon/discord.svg" alt="">Discord</button>
+                            </div>
+                            <form class="mb-9">
+                                <div class="form-floating mb-4">
+                                    <input type="text" class="form-control" id="signupName" placeholder="account">
+                                    <label for="signupName">姓名</label>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <input type="email" class="form-control" id="signupEmail" placeholder="account">
+                                    <label for="signupEmail">信箱</label>
+                                </div>
+                                <div class="form-floating mb-4 position-relative">
+                                    <input type="password" class="form-control" id="sigupPassword" placeholder="Password">
+                                    <label for="sigupPassword">密碼</label>
+                                    <span class="material-icons-outlined position-absolute top-50 end-0 translate-middle">visibility_off</span>
+                                </div>
+                                <div class="form-floating mb-4 position-relative">
+                                    <input type="password" class="form-control" id="signupPasswordCheck" placeholder="Password">
+                                    <label for="signupPasswordCheck">確認密碼</label>
+                                    <span class="material-icons-outlined position-absolute top-50 end-0 translate-middle">visibility_off</span>
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="agreeRule">
+                                    <label class="form-check-label" for="agreeRule">
+                                        我同意
+                                        <a rel="#" class="">服務條款</a>
+                                        和
+                                        <a rel="#" class="">隱私政策</a>
+                                    </label>
+                                 </div>
+                                <div class="d-grid gap-4">
+                                    <button type="button" class="btn-cus-fill btn-cus-main border-0 d-flex justify-content-center">
+                                        送出<span class="material-icons-outlined ms-md-1">chevron_right</span>
+                                    </button>
+                                </div>
+                            </form> 
+                            <div class="text-center ">
+                                <span>已經是會員？</span>
+                                <a class="" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="cursor: pointer;">
+                                    直接登入
+                                </a>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+.bg-gray-100{
+    background-color: $gray-100;
+}
+.bg-img{
+    
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+
+.bg-img-index-hero{
+    background-image: url("../assets/images/index/gradient-ball.png");
+    background-position: top;
+    background-size: cover;
+}
+.bg-img-index-story{
+    height: 200px;
+    background-color: $gray-900;
+    // position: absolute;
+    // bottom: 50%;
+    z-index: 3;
+}
+.bg-img-index-story-fix{
+    position: static;
+    z-index: 1;
+}
+
+.bg-img-index-knowmore{
+    background-image: url("../assets/images/index/gradient-ball.png");
+    background-position: 220% 125%;
+    background-size:80%;
+}
+@media(min-width:768px){
+    .bg-img-index-knowmore{
+        background-position: 130% 140px;
+        background-size:50%;
+    }
+}
+
+.bg-img-index-qa{
+    background-image: url("../assets/images/index/bg-grid.png");
+    background-repeat:repeat;
+}
+
+.cus-shadow{
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+}
+.border-top-dash{
+    border: 1px solid $gray-300;
+    border-style: dashed;
+}
+.border-bot-dash{
+    
+    border-bottom: 1px dashed $gray-300;
+}

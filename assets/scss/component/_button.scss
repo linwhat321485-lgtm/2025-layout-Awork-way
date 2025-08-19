@@ -1,0 +1,34 @@
+.btn-cus-block{
+    display: inline-block;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+.btn-cus-fill{
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+.btn-cus-main{
+    color: $white;
+    background: $black;
+    &:hover{
+        color: $black;
+        background-color: $secondary;
+    }
+    &:active{
+        color: $black;
+        background-color: $secondary;
+    }
+}
+.btn-cus-sub{
+    color: $black;
+    background: $secondary;
+    &:hover{
+        color: $white;
+        background-color: $primary;
+    }
+    &:active{
+        color: $white;
+        background-color: $primary;
+    }
+}

@@ -1,0 +1,29 @@
+.badge-merit{
+    padding: 12px 24px;
+    border-radius:12px 0 12px 0;
+}
+.badge-step{
+    padding: 8px 16px;
+    border-radius: 12px 0 12px 0;
+}
+
+.badge-tip{
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    
+}
+.badge-tip-tail{
+    width: 28px;
+    height: 28px;
+    border: 1px solid $primary;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    transform: rotate(45deg);
+}

@@ -1,21 +1,29 @@
 // @import './layout/header.scss';
 // @import './layout/footer.scss';
 // @import './pages/index.scss';
-
-@import 'bootstrap/scss/functions';
-
-@import './helpers/variables';
-
-@import 'bootstrap/scss/bootstrap';
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons+Outlined';
 
-body{
-    background-color: $gray-100;
-}
-.cus-shadow{
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
-}
+@import 'bootstrap/scss/functions';
+@import './helpers/variables';
+@import './helpers/cutome-btn';
+
+@import 'bootstrap/scss/bootstrap';
+
+@import './helpers/utilities';
+
+@import './layout/nav';
+@import './component/background';
+@import './component/badge';
+@import './component/button';
+@import './component/modal';
+@import './component//text';
 
 // *{
 //     outline: 1px solid rgb(208, 4, 4);
 // }
+
+
+
+
+
+
